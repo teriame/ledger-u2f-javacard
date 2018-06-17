@@ -52,7 +52,7 @@ final def JC304 = libsSdk + '/jc304_kit'
 final def JC305 = libsSdk + '/jc305u1_kit'
 
 // Which JavaCard SDK to use - select
-final def JC_SELECTED = JC304
+final def JC_SELECTED = JC303
 
 javacard {
 
@@ -69,13 +69,13 @@ javacard {
         cap {
             packageName 'com.ledger.u2f'
             version '1.1'
-            aid '0xa0:0x00:0x00:0x06:0x17:0x00:0x4f:0x97:0xa2:0xe9:0x50:0x01'
+            aid '0xA0:0x00:0x00:0x06:0x47:0x2F:0x01:0x01'
             output 'ledger-u2f.cap'
 
             //noinspection GroovyAssignabilityCheck
             applet {
                 className 'U2FApplet'
-                aid '0xa0:0x00:0x00:0x06:0x17:0x00:0x4f:0x97:0xa2:0xe9:0x49:0x01'
+                aid '0xA0:0x00:0x00:0x06:0x47:0x2F:0x00:0x01'
             }
 
             //noinspection GroovyAssignabilityCheck
